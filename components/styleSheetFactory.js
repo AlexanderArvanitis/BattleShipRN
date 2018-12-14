@@ -6,15 +6,16 @@ import {
 } from 'react-native';
 
 export default class StyleSheetFactory {
-    static getSheet(shipLenght, shipWidth) {
-        console.log(shipLenght , shipWidth )
+    static getSheet(length, width) {
+        console.log("length is ", length + " width is", width )
         return StyleSheet.create({
             ship : {
                 backgroundColor: "black",
-                width:  shipWidth,
-                height: shipLenght * 26,
+                width:  width,
+                height: length,
                 margin: 6
             }
         })
     }
 }
+ 

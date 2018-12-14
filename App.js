@@ -1,12 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Dimensions,  PanResponder,
   Animated } from 'react-native';
-// import Board from './components/board';
 import PlayerBoard from './components/playerBoard';
 import OpponentBoard from './components/opponentBoard';
-import Draggable from './components/draggable';
+import Ship from './components/ship';
 import Heading from './components/heading';
-// const DeviceWidth = Dimensions.get('window').width
+
 
 
 export default class App extends React.Component {

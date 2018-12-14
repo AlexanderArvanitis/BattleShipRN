@@ -10,7 +10,7 @@ import {
 import StyleSheetFactory from './styleSheetFactory';
 
 
-class Draggable extends Component {
+class Ship extends Component {
  
       
   constructor(props) {
@@ -25,13 +25,9 @@ class Draggable extends Component {
       opacity: new Animated.Value(1)
         
     };
-    // this.onPress = this.onPress.bind(this);
-  }
-  onPress(){
-    console.log("I got pressed by touchable opacity");
     
   }
-   
+ 
 
   componentWillMount() {
 
@@ -130,11 +126,11 @@ class Draggable extends Component {
       
 }}
 
-Draggable.propTypes = {
+Ship.propTypes = {
 yVal : PropTypes.number,
 xVal : PropTypes.number
 }
-Draggable.defaultProps = {
+Ship.defaultProps = {
     yVal : 50,
     xVal : 50
 }
@@ -166,4 +162,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Draggable;
+export default Ship;
